@@ -1,0 +1,86 @@
+	// clearfix
+.clearfix{
+	*zoom: 1;
+	&:before,&:after{
+		content: "";
+		display: block;
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+// full-left
+.pull-left{
+	float: left;
+}
+
+// full-right
+.pull-right{
+	float: right;
+}
+
+// wrapper
+.wrapper{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// column(栏目)
+.column{
+	position: relative;
+	padding-left: 29px;
+	color: #5b0906;
+	font-size: 14px;
+	font-weight: 700;
+	&:before{
+		display: table;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0px;
+		width: 14px;
+		height: 14px;
+		background-color: #5b0906;
+	}
+	&:after{
+		display: table;
+		content: "";
+		position: absolute;
+		top: 25px;
+		left: 0px;
+		width: 100%;
+		height: 4px;
+		background-color: #5b0906;
+	}
+}
+.more{
+	margin-top: 7px;
+	margin-right: 7px;
+}
+
+
+.advantage-title{
+	padding-top: 15px;
+	padding-left: 20px;
+	span{
+		color: #5b0906;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	small{
+		font-size: 12px;
+		line-height: 24px;
+	}
+}
+.advantage-content{
+	margin-top: 3px;
+	margin-left: 83px;
+	border-top: 1px dashed #631411;
+	padding-top: 5px;
+	line-height: 26px;
+	font-size: 14px;
+}
+
+
